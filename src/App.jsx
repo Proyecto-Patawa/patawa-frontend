@@ -1,16 +1,13 @@
-import { useState } from "react";
-import "./App.scss";
+import "./App.scss"
 import "bootstrap/dist/css/bootstrap.min.css";
+import LoginPage from "./Components/LoginPage.jsx";
+
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div>
-        <h1 className="text-peach-fuzz">Hola mundo</h1>
-      </div>
-    </>
+    <div className="App">
+      <LoginPage />
+    </div>
   );
 }
 

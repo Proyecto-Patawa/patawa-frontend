@@ -52,3 +52,15 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 .read-the-docs {
   color: #888;
 }
+
+
+.logo {
+  max-width: 150px;
+}
+
+@media (max-width: 575.98px) {
+  .card {
+    border: none;
+    box-shadow: none;
+  }
+}
