@@ -1,37 +1,62 @@
 import logo from "../assets/images/patawa-logo.png";
 import illustration from "../assets/images/illustracion.png";
+import forma from "../assets/images/forma-uno.png";
+import"../App.scss";
+
+
 const LoginPage = () => {
   return (
-    <>
-      <div className="login-container">
-        <div className="row justify-content-center align-items-center w-100">
-          <div className="col-md-4">
-            <div className="login-box">
-              <div className="text-center mb-3">
-                <img src={logo} alt="PATAWA Logo" width="150" />
-              </div>
-              <form className="login-form">
+    <div className="login-page container-fluid ">
+      <div className="row">
+        <div className="col-12">
+          <img src={logo} alt="Logo Patawa" className="logo" />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-6 d-flex align-items-center justify-content-center">
+          <img src={illustration} alt="Dog Walker" className="dog-walker" />
+        </div>
+        <div className="col-md-6 d-flex align-items-center justify-content-center">
+          <div className="login-form-container">
+            <h2 className="mb-4 text-color-one">Bienvenidos</h2>
+            <form className="mb-5">
+              <div className="form-group ">
                 <input
                   type="text"
                   className="form-control"
+                  id="username"
                   placeholder="Usuario"
+                  
                 />
+              </div>
+              <div className="form-group">
                 <input
                   type="password"
                   className="form-control"
+                  id="password"
                   placeholder="Contraseña"
-                />
-                <button className="btn login-btn">Ingresar</button>
-                <div className="forgot-password">¿Olvidó su contraseña?</div>
-              </form>
-            </div>
-          </div>
-          <div className="col-md-4 text-center">
-            <img src={illustration} alt="Dog Walker Illustration" width="300" />
+                /> 
+              </div>
+              <button type="submit" className="btn text-color-one">
+                Ingresar
+              </button>
+            </form>
+            <a href="#" className="forgot-password text-color-one">
+              Olvido su contraseña?
+            </a>
           </div>
         </div>
       </div>
-    </>
+      <div className="row">
+        <div className="col-12 d-flex justify-content-end">
+          <img
+            src={forma}
+            alt="form one"
+            className="form-one"
+          />
+        </div>
+      </div>
+    </div>
   );
 };
 
