@@ -1,10 +1,18 @@
+import { useNavigate } from 'react-router-dom';
 import logo from "../assets/images/patawa-logo.png";
 import illustration from "../assets/images/illustracion.png";
 import forma from "../assets/images/forma-uno.png";
 import"../App.scss";
 
-
 const LoginPage = () => {
+
+  let navigate = useNavigate();
+
+  const handleLogin = () => {
+    // Suponiendo que la autenticación es correcta
+    navigate('/owners');
+  };
+
   return (
     <div className="login-page container-fluid ">
       <div className="row">
@@ -26,7 +34,6 @@ const LoginPage = () => {
                   className="form-control"
                   id="username"
                   placeholder="Usuario"
-                  
                 />
               </div>
               <div className="form-group">
@@ -35,9 +42,9 @@ const LoginPage = () => {
                   className="form-control"
                   id="password"
                   placeholder="Contraseña"
-                /> 
+                />
               </div>
-              <button type="submit" className="btn text-color-one">
+              <button onClick={handleLogin} type="submit" className="btn text-color-one">
                 Ingresar
               </button>
             </form>
@@ -49,11 +56,7 @@ const LoginPage = () => {
       </div>
       <div className="row">
         <div className="col-12 d-flex justify-content-end">
-          <img
-            src={forma}
-            alt="form one"
-            className="form-one"
-          />
+          <img src={forma} alt="form one" className="form-one" />
         </div>
       </div>
     </div>
