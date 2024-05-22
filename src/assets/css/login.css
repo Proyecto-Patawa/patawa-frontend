@@ -1,0 +1,39 @@
+.login-page {
+  & .logo {
+    max-width: 150px;
+    margin: 20px;
+  }
+  & .dog-walker {
+    max-width: 90%;
+  }
+  & .login-form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    text-align: center;
+    & form {
+      width: 100%;
+      .form-group {
+        margin-bottom: 15px;
+      }
+    }
+    & .btn {
+      width: 100%;
+      background-color: var(--secondary-color);
+      color: white;
+      border: none;
+
+      &:hover {
+        background-color: var(--main-color);
+      }
+    }
+    & .forgot-password {
+      display: block;
+      margin-top: 10px;
+      text-decoration: none;
+    }
+  }
+  & .form-one {
+    max-width: 150px;
+  }
+}

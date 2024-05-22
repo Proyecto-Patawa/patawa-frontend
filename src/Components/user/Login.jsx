@@ -1,9 +1,7 @@
-import logo from "../assets/images/patawa-logo.png";
-import illustration from "../assets/images/illustracion.png";
-import forma from "../assets/images/forma-uno.png";
-import"../App.scss";
-
-
+import logo from "../../assets/images/patawa-logo.png";
+import illustration from "../../assets/images/illustracion.png";
+import forma from "../../assets/images/forma-uno.png";
+import "../../assets/css/login.css";
 const LoginPage = () => {
   return (
     <div className="login-page container-fluid ">
@@ -26,7 +24,6 @@ const LoginPage = () => {
                   className="form-control"
                   id="username"
                   placeholder="Usuario"
-                  
                 />
               </div>
               <div className="form-group">
@@ -35,25 +32,16 @@ const LoginPage = () => {
                   className="form-control"
                   id="password"
                   placeholder="Contraseña"
-                /> 
+                />
               </div>
               <button type="submit" className="btn text-color-one">
                 Ingresar
               </button>
             </form>
-            <a href="#" className="forgot-password text-color-one">
-              Olvido su contraseña?
-            </a>
+            {/* <a href="#" className="forgot-password text-color-one">
+              Olvidó su contraseña?
+            </a> */}
           </div>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col-12 d-flex justify-content-end">
-          <img
-            src={forma}
-            alt="form one"
-            className="form-one"
-          />
         </div>
       </div>
     </div>

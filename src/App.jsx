@@ -1,12 +1,10 @@
-import "./App.scss"
-import "bootstrap/dist/css/bootstrap.min.css";
-import LoginPage from "./Components/LoginPage.jsx";
-
+import LoginPage from "./Components/user/Login.jsx";
+import { Routing } from "./router/Routing.jsx";
 
 function App() {
   return (
     <div className="App">
-      <LoginPage />
+      <Routing></Routing>
     </div>
   );
 }
