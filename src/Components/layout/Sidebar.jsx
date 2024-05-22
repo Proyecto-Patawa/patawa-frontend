@@ -36,6 +36,9 @@ const Sidebar = () => {
             </li>
           </ul>
         </div>
+        <NavLink className="btn btn-sm btn-secondary  m-2" to="logout">
+          <i className="fas fa-sign-out-alt"></i> Cerrar Sesión
+        </NavLink>
       </nav>
     </>
   );

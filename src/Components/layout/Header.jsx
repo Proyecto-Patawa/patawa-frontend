@@ -1,4 +1,7 @@
+import useAuth from "../../hooks/useAuth";
 const Header = () => {
+  const { auth } = useAuth();
+
   return (
     <>
       <div className="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
@@ -15,7 +18,7 @@ const Header = () => {
             width="40"
             height="40"
           />
-          <span>Hola, Sandra</span>
+          <span>{auth.fullName}</span>
         </div>
       </div>
     </>
