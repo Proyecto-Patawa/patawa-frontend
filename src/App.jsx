@@ -1,4 +1,3 @@
-import LoginPage from "./Components/user/Login.jsx";
 import { Routing } from "./router/Routing.jsx";
 
 const owners = [
