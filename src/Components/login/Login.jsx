@@ -1,15 +1,7 @@
 import logo from "../../assets/images/patawa-logo.png";
 import illustration from "../../assets/images/illustracion.png";
-import forma from "../../assets/images/forma-uno.png";
 import "../../assets/css/login.css";
-const LoginPage = () => {
-  let navigate = useNavigate();
-
-  const handleLogin = () => {
-    // Suponiendo que la autenticación es correcta
-    navigate("/owners");
-  };
-
+const Login = () => {
   return (
     <div className="login-page container-fluid ">
       <div className="row">
@@ -41,11 +33,7 @@ const LoginPage = () => {
                   placeholder="Contraseña"
                 />
               </div>
-              <button
-                onClick={handleLogin}
-                type="submit"
-                className="btn text-color-one"
-              >
+              <button type="submit" className="btn text-color-one">
                 Ingresar
               </button>
             </form>
@@ -59,4 +47,4 @@ const LoginPage = () => {
   );
 };
 
-export default LoginPage;
+export default Login;

@@ -43,3 +43,7 @@
 .search-bar {
   width: 300px;
 }
+.logo {
+  max-width: 150px;
+  padding: 5px;
+}

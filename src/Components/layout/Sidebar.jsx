@@ -1,21 +1,23 @@
-function Sidebar() {
+import logo from "../../assets/images/patawa-logo.png";
+import { NavLink } from "react-router-dom";
+const Sidebar = () => {
   return (
     <>
       <nav className="col-md-2 d-none d-md-block sidebar">
         <div className="sidebar-sticky">
           <div className="text-center mb-4">
-            <img src="logo.png" alt="Logo" className="img-fluid" width="100" />
+            <img src={logo} alt="Logo Patawa" className="logo" />
           </div>
           <ul className="nav flex-column">
             <li className="nav-item">
-              <a className="nav-link active" href="#">
+              <NavLink className="nav-link active" to="/admin">
                 <i className="fa fa-tachometer-alt"></i> Dashboard
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <NavLink className="nav-link" to="owners">
                 <i className="fa fa-user"></i> Propietarios
-              </a>
+              </NavLink>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
@@ -37,6 +39,6 @@ function Sidebar() {
       </nav>
     </>
   );
-}
+};
 
 export default Sidebar;
