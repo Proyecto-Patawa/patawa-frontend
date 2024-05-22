@@ -20,11 +20,12 @@
     & .btn {
       width: 100%;
       background-color: var(--secondary-color);
-      color: white;
+      color: var(--main-color);
       border: none;
 
       &:hover {
         background-color: var(--main-color);
+        color: white;
       }
     }
     & .forgot-password {

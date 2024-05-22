@@ -27,16 +27,11 @@ const Header = () => {
         <input
           type="text"
           className="form-control search-bar"
-          placeholder="Search here"
+          placeholder="Buscar"
         />
         <div className="profile">
-          <img
-            src="https://via.placeholder.com/40"
-            alt="Profile"
-            width="40"
-            height="40"
-          />
-          <span>{auth.fullName}</span>
+          <img src={auth.avatarUrl} alt="Profile" width="40" height="40" />
+          <span className="custom-span">{auth.fullName}</span>
         </div>
       </div>
     </>

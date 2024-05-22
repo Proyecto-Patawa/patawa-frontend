@@ -6,6 +6,7 @@ import useForm from "../../hooks/useForm";
 import Global from "../../helpers/Global";
 import useAuth from "../../hooks/useAuth";
 import { Navigate } from "react-router-dom";
+
 const Login = () => {
   const { auth, setAuth } = useAuth();
   const { form, changed } = useForm({});
@@ -28,6 +29,7 @@ const Login = () => {
         localStorage.setItem("token", data.token);
         localStorage.setItem("user", JSON.stringify(data.tokenUser));
         toast.success("usuario identificado correctamente");
+        console.log(data.token);
 
         //set auth
         setAuth(data.tokenUser);
@@ -93,7 +95,7 @@ const Login = () => {
                       onChange={changed}
                     />
                   </div>
-                  <button type="submit" className="btn text-color-one">
+                  <button type="submit" className="btn">
                     Ingresar
                   </button>
                 </form>
