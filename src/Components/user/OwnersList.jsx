@@ -54,16 +54,16 @@ const OwnersList = () => {
     <>
       <div className="row">
         <div className="col">
-          <table class="table">
+          <table className="table table-bordered table-hover">
             <thead>
               <tr>
-                <th>Tipo de documento</th>
-                <th>Identificación</th>
-                <th>Nombre</th>
-                <th>Email</th>
-                <th>Dirección</th>
-                <th>Teléfono</th>
-                <th>Acciones</th>
+                <th className="custom-th">Tipo de documento</th>
+                <th className="custom-th">Identificación</th>
+                <th className="custom-th">Nombre</th>
+                <th className="custom-th">Email</th>
+                <th className="custom-th">Dirección</th>
+                <th className="custom-th">Teléfono</th>
+                <th className="custom-th">Acciones</th>
               </tr>
             </thead>
             <tbody>
