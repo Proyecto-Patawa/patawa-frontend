@@ -1,8 +1,8 @@
 const Footer = () => {
   return (
     <>
-      <footer className="footer">
-        <p>&copy; 2024 Patawa Dog Walking</p>
+      <footer className="footer row justify-content-center">
+        &copy; 2024 Patawa Dog Walking
       </footer>
     </>
   );

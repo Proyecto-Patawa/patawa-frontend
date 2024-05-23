@@ -23,7 +23,7 @@ const Layout = () => {
               className="col-md-9 ml-sm-auto col-lg-10 px-md-4 content"
             >
               <Header></Header>
-              <div className="content">
+              <div className="outlet">
                 {auth.userId ? <Outlet></Outlet> : <Navigate to="/" />}
               </div>
             </main>

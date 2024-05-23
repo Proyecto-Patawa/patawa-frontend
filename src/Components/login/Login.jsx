@@ -29,7 +29,6 @@ const Login = () => {
         localStorage.setItem("token", data.token);
         localStorage.setItem("user", JSON.stringify(data.tokenUser));
         toast.success("usuario identificado correctamente");
-        console.log(data.token);
 
         //set auth
         setAuth(data.tokenUser);
