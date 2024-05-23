@@ -40,7 +40,7 @@ const OwnersList = () => {
   return (
     <>
       {loading ? (
-        <p>Loading...</p>
+        <p>Cargando..</p>
       ) : (
         <div className="row">
           <div className="col">

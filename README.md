@@ -16,5 +16,3 @@ npm run dev
 Para crear una compilación de producción, ejecuta:
 npm run build
 
-
-
