@@ -5,9 +5,14 @@ Este repositorio contiene el código fuente para la construcción de un Dashboar
 
 Tecnologías Utilizadas
 
-React: Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas. CSS: Para el diseño y la presentación. Bootstrap: Marco de diseño que facilita la creación de interfaces modernas y receptivas.
+React: Biblioteca de JavaScript para la construcción de interfaces de usuario interactivas.
+CSS: Para el diseño y la presentación.
+Bootstrap: Marco de diseño que facilita la creación de interfaces modernas y receptivas.
 
-Ejecutar la Aplicación Para iniciar el servidor de desarrollo, ejecuta: npm run dev
+Ejecutar la Aplicación
+Para iniciar el servidor de desarrollo, ejecuta:
+npm run dev
 
-Para crear una compilación de producción, ejecuta: npm run build
+Para crear una compilación de producción, ejecuta:
+npm run build
 
